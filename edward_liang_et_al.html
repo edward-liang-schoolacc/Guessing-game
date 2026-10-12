@@ -23,6 +23,25 @@
             }
             
         }
+        function evaluate(){
+            if (document.getElementById("guess") < secret){
+                const comparestatement = document.getElementById("compare");
+                compare.textContent = "Too low!"
+            }
+            if (document.getElementById("guess") > secret){
+                const comparestatement = document.getElementById("compare");
+                compare.textContent = "Too high!"
+            }
+            if (document.getElementById("guess") === secret){
+                const comparestatement = document.getElementById("compare");
+                compare.textContent = "Correct"
+            }
+        }
     </script>
+
+    <input type="number" value="guess" id="guess">Guess here</input>
+    <input type="button" value="Enter guess" onclick="evaluate()">
+    <label id="compare"></label>
+    
 </body>
 </html>
