@@ -23,7 +23,7 @@
             }
             
         }
-        function ehvaluate(){
+        function evaluateguess(){
             const comparestatement = document.getElementById("compare");
             if (Number(document.getElementById("guess").value) < Number(secret)){
                 const comparestatement = document.getElementById("compare");
@@ -41,7 +41,7 @@
     </script>
 
     <input type="number" id="guess"> Guess here
-    <input type="button" value="Enter guess" onclick="ehvaluate()">
+    <input type="button" value="Enter guess" onclick="evaluateguess()">
     <p id="compare"></p>
     
 </body>
